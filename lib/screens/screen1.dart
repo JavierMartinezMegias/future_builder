@@ -1,29 +1,27 @@
+
 import 'package:flutter/material.dart';
-import 'package:future_builder/screens/screen2.dart';
+import 'package:future_builder/screens/loading_page.dart';
 
-void main() => runApp(const MyApp());
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body:Center(
-          child: FilledButton(onPressed: onPressed(context), child: Text('Pantalla 2'))
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Pantalla Inicial'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const LoadingScreen()));
+          },
+          child: const Text('Ir a la segunda pantalla'),
         ),
       ),
     );
   }
-  
-  onPressed(BuildContext context) {
-    Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Screen2()));
-  }
-
-  
 }
+
+

@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 
-class Screen2 extends StatelessWidget {
-  const Screen2({super.key});
+class ThirdScreen extends StatelessWidget {
+  const ThirdScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Tercera Pantalla'),
+      ),
+      body: const Center(
+        child: Text('¡Bienvenido a la tercera pantalla!'),
+      ),
+    );
   }
 }
