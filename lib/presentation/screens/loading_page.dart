@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:future_builder/screens/screen2.dart';
+import 'package:future_builder/presentation/screens/screen2.dart';
 
 class LoadingScreen extends StatelessWidget {
   const LoadingScreen({super.key});

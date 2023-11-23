@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:future_builder/screens/screen1.dart';
+import 'package:future_builder/presentation/screens/screen1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Flutter FutureBuilder Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      routerConfig: ,
     );
   }
 }

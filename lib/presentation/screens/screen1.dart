@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:future_builder/screens/loading_page.dart';
+import 'package:future_builder/presentation/screens/loading_page.dart';
+import 'package:future_builder/presentation/widgets/side_menu.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -20,6 +22,7 @@ class HomeScreen extends StatelessWidget {
           child: const Text('Ir a la segunda pantalla'),
         ),
       ),
+      drawer: SideMenu(),
     );
   }
 }
