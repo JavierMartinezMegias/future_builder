@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:future_builder/presentation/widgets/menu_item.dart';
 import 'package:go_router/go_router.dart';
@@ -28,6 +26,7 @@ class _SideMenuState extends State<SideMenu>{
         
         final menuItem = appMenuItem[value];
         context.push(menuItem.link);
+        context.pop();
       },
       children: [
 

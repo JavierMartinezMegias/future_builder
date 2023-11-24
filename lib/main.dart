@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:future_builder/presentation/screens/screen1.dart';
+import 'package:future_builder/config/router/router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      routerConfig: ,
+      routerConfig: appRouter
     );
   }
 }

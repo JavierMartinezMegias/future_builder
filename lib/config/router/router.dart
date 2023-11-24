@@ -7,13 +7,13 @@ final appRouter = GoRouter(
   initialLocation: '/',
   routes: [
     GoRoute(
-      path: '/screen1',
-      name: 'login',
+      path: '/',
+      name: 'home',
       builder: (context, state) => const HomeScreen(),
     ),
     GoRoute(
-      path: '/login_sreen',
-      name: 'home',
+      path: '/login_screen',
+      name: 'login',
       builder: (context, state) => const LoadingScreen(),
     ),
   ],

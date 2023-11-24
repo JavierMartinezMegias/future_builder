@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
-import 'package:future_builder/presentation/screens/loading_page.dart';
 import 'package:future_builder/presentation/widgets/side_menu.dart';
+import 'package:go_router/go_router.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -16,13 +15,12 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const LoadingScreen()));
+            context.pushNamed('login');
           },
           child: const Text('Ir a la segunda pantalla'),
         ),
       ),
-      drawer: SideMenu(),
+      drawer: const SideMenu(),
     );
   }
 }

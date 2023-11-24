@@ -14,8 +14,7 @@ class MenuItem{
 }
 
 const appMenuItem = <MenuItem>[
-  MenuItem(nombre: "Primera Pantalla", link: "/screen1", icon: Icons.abc_rounded),
-  MenuItem(nombre: "Loading Pantalla", link: "/loading_page", icon: Icons.account_balance),
-  MenuItem(nombre: "Segunda Pantalla", link: "/screen1", icon: Icons.hardware_outlined),
+  MenuItem(nombre: "Primera Pantalla", link: "/", icon: Icons.abc_rounded),
+  MenuItem(nombre: "Loading Pantalla", link: "/login_screen", icon: Icons.account_balance),
 
 ];
